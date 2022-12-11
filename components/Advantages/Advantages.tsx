@@ -1,10 +1,8 @@
 import { AdvantagesProps } from './Advantages.props';
 import CheckIcon from './check.svg';
 
-
-import cn from 'classnames';
 import styles from './Advantages.module.css';
-import { priceRu } from '../../helpers/helpers';
+
 
 
 export const Advantages  = ({advantages}: AdvantagesProps): JSX.Element => {

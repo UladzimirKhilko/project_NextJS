@@ -1,5 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 import { ForwardedRef, forwardRef, useRef, useState } from 'react';
-import Image from 'next/image';
 import { ProductProps } from './Product.props';
 import styles from './Product.module.css';
 import cn from 'classnames';
@@ -9,7 +9,6 @@ import { Tag } from '../Tag/Tag';
 import { Button } from '../Button/Button';
 import { declofNum, priceRu } from '../../helpers/helpers';
 import { Divider } from '../Divider/Divider';
-import { isValid } from 'date-fns/esm';
 import { Review } from '../Review/Review';
 import { ReviewForm } from '../ReviewForm/ReviewForm';
 import { motion } from 'framer-motion';
@@ -41,7 +40,7 @@ export const Product  = motion( forwardRef(({product, className, ...props }:Prod
 		<div className={className} {...props} ref={ref}>
 			<Card className={styles.product}>
 				<div className={styles.logo}>
-					<Image
+					<img
 						src={process.env.NEXT_PUBLIC_DOMAIN + product.image}
 						alt={product.title}
 						width={70} 
