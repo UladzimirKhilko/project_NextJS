@@ -14,7 +14,7 @@ function Home(): JSX.Element {
 
   return (
     <>
-      <Htag tag='h1'>Стартовая страница</Htag>
+      <Htag tag='h1'>Заголовок</Htag>
       <Button appearance='primary' arrow='right' >Кнопка</Button>
       <Button appearance='ghost' arrow='right'>Кнопка</Button>
       <P size='s' >Маленький</P>
